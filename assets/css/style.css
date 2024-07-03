@@ -547,3 +547,145 @@ button {
 .pay__content--bottom {
     margin-left: auto;
 }
+
+.review {
+    padding: 92px 0;
+}
+
+.review__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__desc {
+    text-align: center;
+    max-width: 435px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.review__body {
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.review__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.review-item {
+    max-width: 570px;
+    flex-shrink: 0;
+}
+
+.review__text {
+    position: relative;
+
+    padding: 42px 28px;
+    border-radius: 8px;
+    border: 1px solid #dfe2e8;
+
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55; /* 154.545% */
+
+    background: #fff;
+}
+
+.review__text:hover {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+    border-color: #fff;
+}
+
+.review__text:hover::after {
+    border-color: #fff transparent transparent transparent;
+}
+
+.review__text::after {
+    position: absolute;
+    left: 50%;
+    bottom: -120px;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    border: 60px solid;
+    border-color: #dfe2e8 transparent transparent transparent;
+}
+
+.review__text::before {
+    position: absolute;
+    left: 50%;
+    bottom: -119px;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    border: 60px solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1;
+}
+
+.review__info {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.review__avatar--wrap {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: #4ab5e3;
+    overflow: hidden;
+}
+
+.review__avatar {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.review__info--name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.review__info--desc {
+    margin-top: 2px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.review-item:nth-child(2) .review__avatar--wrap {
+    background: #439f90;
+}
+
+.review__dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.review__dot {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9b9fab;
+}
+
+.review__dot--active,
+.review__dot:hover {
+    cursor: pointer;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+}
