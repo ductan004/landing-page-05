@@ -401,3 +401,149 @@ button {
     font-size: 1.6rem;
     line-height: 1.75; /* 175% */
 }
+
+/* Pay */
+.pay {
+    padding: 68px 0;
+}
+
+.pay__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 160px;
+}
+
+.pay__content {
+    width: 470px;
+}
+
+.pay__media {
+    max-width: 482px;
+    margin-right: auto;
+}
+
+.pay__img {
+    width: 100%;
+}
+
+.pay__content--list {
+    margin-top: 28px;
+}
+
+.pay-item {
+    display: flex;
+    align-items: center;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.pay-item::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.pay-item + .pay-item {
+    margin-top: 18px;
+}
+
+.pay__btn {
+    margin-top: 38px;
+}
+
+.pay__img--wrap {
+    position: relative;
+}
+
+.pay__decor1 {
+    position: absolute;
+    object-fit: cover;
+    top: -48px;
+    right: -135px;
+    width: 276px;
+    height: 86px;
+}
+
+.pay__decor2 {
+    position: absolute;
+    object-fit: cover;
+    bottom: -55px;
+    right: -88px;
+    width: 120px;
+    height: 120px;
+}
+
+.pay__img--wrap--bottom {
+    position: relative;
+    width: 470px;
+    padding-left: 29px;
+}
+
+.pay__img--wrap--bottom::after {
+    position: absolute;
+    content: url("../img/pay-decor-03.svg");
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pay__img--bottom {
+    width: 413px;
+}
+
+.pay__banking {
+    position: absolute;
+    bottom: 57px;
+    right: -100px;
+    width: 281px;
+    height: 220px;
+    padding: 28px;
+    background: #fff;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+    border-radius: 8px;
+}
+
+.banking-title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.banking__list {
+    margin-top: 20px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 18px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* .banking-item {
+    width: calc(33.33% - 18px);
+} */
+
+.pay__icon {
+    position: absolute;
+    bottom: 222px;
+    right: -129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.pay__content--bottom {
+    margin-left: auto;
+}
