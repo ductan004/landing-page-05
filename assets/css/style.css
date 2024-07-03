@@ -66,7 +66,7 @@ button {
     align-items: center;
     width: 18px;
     height: 2px;
-    background: #696d77;
+    background: currentColor;
 }
 
 .section-desc {
@@ -82,6 +82,10 @@ button {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25; /* 125% */
+}
+
+.color--white {
+    color: #fff;
 }
 
 /* Header */
@@ -767,4 +771,72 @@ button {
     color: #696d76;
     font-size: 1.6rem;
     line-height: 1.625; /* 162.5% */
+}
+
+/* Download */
+.download {
+    margin: 92px 0 100px;
+}
+
+.download__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background: var(--color-primary);
+    border-radius: 24px;
+}
+
+.download__desc {
+    max-width: 435px;
+    text-align: center;
+    color: #fff;
+}
+
+.dowdload__btn--wrap {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 38px;
+}
+
+.dowdload__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    height: 64px;
+    padding: 18px 31px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.download__img {
+    width: 100%;
+}
+
+.img__star {
+    position: absolute;
+}
+
+.img__star:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.img__star:nth-of-type(2) {
+    left: 166px;
+    bottom: 49px;
+}
+
+.img__star:nth-of-type(3) {
+    top: 49px;
+    right: 112px;
+}
+
+.img__star:nth-of-type(4) {
+    right: 166px;
+    bottom: 49px;
 }
